@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sample-jee-jbossas6-web:war exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-jbossas6-web/target/sample-jee-jbossas6-web-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-jbossas6-web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sample-jee-jbossas6-web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

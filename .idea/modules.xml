@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-jbossas6.iml" filepath="$PROJECT_DIR$/sample-jee-jbossas6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-jbossas6-ear/sample-jee-jbossas6-ear.iml" filepath="$PROJECT_DIR$/sample-jee-jbossas6-ear/sample-jee-jbossas6-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-jbossas6-ejb/sample-jee-jbossas6-ejb.iml" filepath="$PROJECT_DIR$/sample-jee-jbossas6-ejb/sample-jee-jbossas6-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-jbossas6-standalone-clients/sample-jee-jbossas6-standalone-clients.iml" filepath="$PROJECT_DIR$/sample-jee-jbossas6-standalone-clients/sample-jee-jbossas6-standalone-clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-jee-jbossas6-web/sample-jee-jbossas6-web.iml" filepath="$PROJECT_DIR$/sample-jee-jbossas6-web/sample-jee-jbossas6-web.iml" />
+    </modules>
+  </component>
+</project>
+

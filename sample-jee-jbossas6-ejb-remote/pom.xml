@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.swesource.sample</groupId>
+        <artifactId>sample-jee-jbossas6</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>sample-jee-jbossas6-ejb-remote</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.parent.artifactId} EJB Remote JAR</name>
+
+    <dependencies>
+        <!-- JPA Entities as Java Beans -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.parent.artifactId}-ejb</artifactId>
+            <version>${project.parent.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+        <!-- ejb -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

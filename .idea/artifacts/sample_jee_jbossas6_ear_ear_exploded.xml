@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="sample-jee-jbossas6-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/sample-jee-jbossas6-ear/target/sample-jee-jbossas6</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sample-jee-jbossas6-ear/javaeeApplication/JavaEE" />
+      <element id="dir-copy" path="$PROJECT_DIR$/sample-jee-jbossas6-ear/src/main/application" />
+      <element id="directory" name="sample-jee-jbossas6-ejb-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="sample-jee-jbossas6-ejb:ejb exploded" />
+      </element>
+      <element id="directory" name="sample-jee-jbossas6-web-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="sample-jee-jbossas6-web:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

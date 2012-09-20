@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+    <local-tx-datasource>
+        <jndi-name>sampleDS</jndi-name>
+        <connection-url>jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=scan1oradbs.ams.se)(PORT=1521))(LOAD_BALANCE=OFF)(FAILOVER=ON)(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=bodfk_test)))</connection-url>
+        <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+        <user-name>bodfk_test</user-name>
+        <password>bodfk_test</password>
+        <valid-connection-checker-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker</valid-connection-checker-class-name>
+        <min-pool-size>1</min-pool-size>
+        <max-pool-size>20</max-pool-size>
+        <prefill>true</prefill>
+        <metadata>
+            <type-mapping>Oracle11g</type-mapping>
+        </metadata>
+    </local-tx-datasource>
+</datasources>

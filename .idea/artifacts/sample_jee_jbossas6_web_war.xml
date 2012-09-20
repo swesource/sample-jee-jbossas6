@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sample-jee-jbossas6-web:war">
+    <output-path>$PROJECT_DIR$/sample-jee-jbossas6-web/target</output-path>
+    <root id="archive" name="sample-jee-jbossas6-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sample-jee-jbossas6-web:war exploded" />
+    </root>
+  </artifact>
+</component>
