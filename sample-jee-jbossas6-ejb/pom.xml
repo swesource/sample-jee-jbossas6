@@ -5,6 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+
     <parent>
         <groupId>com.swesource.sample</groupId>
         <artifactId>sample-jee-jbossas6</artifactId>
@@ -41,11 +42,13 @@
         </dependency>
          -->
         <!-- remote EJB interfaces -->
+        <!--
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${project.parent.artifactId}-ejb</artifactId>
+            <artifactId>${project.parent.artifactId}-ejb-remote</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        -->
         <!-- cdi -->
         <dependency>
             <groupId>javax.enterprise</groupId>
