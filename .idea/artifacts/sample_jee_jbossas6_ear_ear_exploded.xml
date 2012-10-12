@@ -6,6 +6,7 @@
       <element id="directory" name="sample-jee-jbossas6-ejb-1.0-SNAPSHOT.jar">
         <element id="artifact" artifact-name="sample-jee-jbossas6-ejb:ejb exploded" />
       </element>
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
       <element id="directory" name="sample-jee-jbossas6-web-1.0-SNAPSHOT.war">
         <element id="artifact" artifact-name="sample-jee-jbossas6-web:war exploded" />
       </element>

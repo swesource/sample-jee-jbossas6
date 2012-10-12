@@ -19,8 +19,8 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="jboss.entity.manager.factory.jndi.name" value="java:/sampleEMF"/>
             <!--<property name="hibernate.dialect" value="com.swesource.persistence.hibernate.dialect.postgresql.PostgreSQLDialect"/>-->
-            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>-->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>-->
         </properties>
     </persistence-unit>
 </persistence>

@@ -1,0 +1,53 @@
+<connection-factories>
+
+   <!-- Queue Connection Factory configuration --> 
+   <tx-connection-factory>
+      <jndi-name>activemq/QueueConnectionFactory</jndi-name>
+      <use-java-context>false</use-java-context>
+      <xa-transaction/>
+      <track-connection-by-tx/>
+      <rar-name>activemq-rar.rar</rar-name>
+      <connection-definition>javax.jms.QueueConnectionFactory</connection-definition>
+      <ServerUrl>failover:(tcp://localhost:61616)</ServerUrl>
+      <min-pool-size>4</min-pool-size>
+      <max-pool-size>200</max-pool-size>
+      <blocking-timeout-millis>30000</blocking-timeout-millis>
+      <idle-timeout-minutes>10</idle-timeout-minutes>
+   </tx-connection-factory>
+
+   <!-- Topic Connection Factory configuration -->
+<!--
+   <tx-connection-factory>
+      <jndi-name>activemq/TopicConnectionFactory</jndi-name>
+      <use-java-context>false</use-java-context>
+      <xa-transaction/>
+      <track-connection-by-tx/>
+      <rar-name>activemq-rar.rar</rar-name>
+      <connection-definition>javax.jms.TopicConnectionFactory</connection-definition>
+      <ServerUrl>failover:(tcp://localhost:61616)</ServerUrl>
+      <min-pool-size>1</min-pool-size>
+      <max-pool-size>200</max-pool-size>
+      <blocking-timeout-millis>30000</blocking-timeout-millis>
+      <idle-timeout-minutes>3</idle-timeout-minutes>
+   </tx-connection-factory>
+-->
+
+   <!-- Queue Definition -->
+   <mbean code="org.jboss.resource.deployment.AdminObject" name="activemq.queue:name=amqQueue">
+      <attribute name="JNDIName">queue/hqtest</attribute>
+      <depends optional-attribute-name="RARName">jboss.jca:service=RARDeployment,name='activemq-rar.rar'</depends>
+      <attribute name="Type">javax.jms.Queue</attribute>
+      <attribute name="Properties">PhysicalName=hqtest</attribute>
+   </mbean>
+
+  <!-- Topic definition -->
+<!--
+   <mbean code="org.jboss.resource.deployment.AdminObject" name="activemq.topic:name=amqTopic">
+      <attribute name="JNDIName">topic/amqTopic</attribute>
+      <depends optional-attribute-name="RARName">jboss.jca:service=RARDeployment,name='activemq-rar.rar'</depends>
+      <attribute name="Type">javax.jms.Topic</attribute>
+      <attribute name="Properties">PhysicalName=topic.outbound</attribute>
+   </mbean>
+-->
+</connection-factories>
+
