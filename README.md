@@ -1,4 +1,5 @@
-> [!NOTE] Project is ARCHIVED
+> [!NOTE]
+> Project is ARCHIVED
 
 # sample-jee-jbossas6
 
